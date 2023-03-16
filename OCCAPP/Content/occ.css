@@ -1,0 +1,239 @@
+﻿#maincontent {
+    min-height: 360px;
+}
+
+h3.subformheader {
+    color: #fff;
+    background-color: #046A38;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-weight: 600;
+    margin-left: 0;
+    width:45%;
+}
+
+.rowmargin10, form .row .row .rowmargin10, form .row .rowmargin10 {
+    margin-bottom: 10px;
+}
+
+.rowmargin20, form .row .row .rowmargin20, form .row .rowmargin20 {
+    margin-bottom: 20px;
+}
+
+.rowmargin30, form .row .row .rowmargin30, form .row .rowmargin30 {
+    margin-bottom: 30px;
+}
+
+.required, .red {
+    color: #cc0000;
+}
+
+.alert-box {
+    font-size: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.alert-box.warning a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+    .alert-box.warning a:hover, .alert-box.warning a:focus {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+table tr th {
+    padding: 0.35rem 0.75rem;
+    font-size: .95rem;
+    color: #222222;
+    text-align: left;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 650px) {
+    .small-left {
+        text-align: left !important;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+        h3.subformheader {
+            letter-spacing: .06em;
+        }
+
+    .personal-info {
+        font-size: 1.05rem;
+    }
+}
+
+@media only screen and (min-width:40.06em) and (max-width:69.05em) {
+    fieldset table tr td {
+        padding: 0.46em 0.2rem;
+    }
+}
+
+
+
+.info {
+    padding: 10px;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.page_content h3 {
+    color: #000;
+    font-size: 1.3rem !important;
+    font-weight: 700;
+    line-height: 1.5rem !important;
+}
+
+.submt_btn {
+    border-radius: 4px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #046a38;
+    border-color: #137f00;
+    display: inline-block;
+    padding: 6px 22px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6285;
+    text-align: center;
+    background-image: none;
+    border: 1px solid transparent;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h4.subformheader {
+    color: #fff;
+    background-color: #046A38;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-weight: 600;
+    margin-left: 0;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+input[type=text], input[type=password], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=email], input[type=number], input[type=search], input[type=tel], input[type=time], input[type=url], input[type=color], textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background-color: #FFFFFF;
+    font-family: inherit;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    color: rgba(0,0,0,0.75);
+    display: block;
+    font-size: 0.875rem;
+    margin: 0 0 1rem 0;
+    padding: 0.5rem;
+    height: 2.3125rem;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-transition: box-shadow 0.45s,border-color 0.45s ease-in-out;
+    transition: box-shadow 0.45s,border-color 0.45s ease-in-out;
+}
+
+label {
+    font-size: 0.875rem;
+    color: #4d4d4d;
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.text-danger {
+    font-size: 0.875rem;
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 0;
+    color: #cc0000 !important;
+}
+
+.card {
+    color: #fff !important;
+    background-color: #046A38 !important;
+    width: 30%;
+    float: right;
+    box-shadow: 9px 8px 5px 0 rgb(26 50 19 / 54%), 0 2px 10px 0 rgb(0 0 0 / 38%);
+    padding: 10px;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+input[type="submit"] {
+    border-radius: 4px;
+    color: #fff;
+    background-color: #046a38;
+    border-color: #137f00;
+    display: inline-block;
+    padding: 6px 22px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6285;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+input[type="submit"]:hover {
+    background-color: #298529;
+    color: #fff;
+    background-position: 0 -15px;
+    border-color: #298529;
+}
+
+mega-menu show-for-medium-up {
+    width: 80%;
+    position: static;
+    float: right;
+    margin-left: 20%;
+}
+.links_nav {
+    width: 60%;
+    margin-left: 40%;
+    position: absolute;
+    bottom: 0px;
+}
+.module--default .row {
+    margin: 0 auto;
+}
+.logo {
+    margin-left: 15%;
+}
+.footer_center .row{
+    padding: 1%;
+}
+
+.text-danger field-validation-error span {
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+.dsdropdown a{
+    text-decoration: none;
+}
+
+.footer_class {
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+}

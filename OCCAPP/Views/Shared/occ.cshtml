@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<script runat="server">
+</script>
+<head id="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width maximum-scale=1.0 minimum-scale=1.0 initial-scale=1.0 user-scalable=no" />
+    <link href="https://www.oaklandcc.edu/_resources/css/icon-font.min.css" rel="stylesheet" />
+    <link href="https://www.oaklandcc.edu/_resources/css/app.css" rel="stylesheet" />
+    <link href="https://www.oaklandcc.edu/_resources/css/osfonts.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.oaklandcc.edu/_resources/css/customdotnet.css" rel="stylesheet" type="text/css" />
+    <link href="occ.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <!-- =====================================HEADER================================================ -->
+    <header role="banner" style="height: 120px">
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="logo">
+                    <a href="https://www.oaklandcc.edu/_resources/img/occ_logo--ver.png'" title="Home" tabindex="1">Oakland Community College</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- =====================================MAIN================================================ -->
+    <form id="form1" runat="server">
+        <main id="maincontent" role="main" class="main">
+            <!-- =========================================FullWidth========================================= -->
+            <article class="module--default">
+                <div class="row">
+                    <div class="small-12 large-12 columns">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                        @RenderBody()
+                    </div>
+                </div>
+            </article>
+        </main>
+    </form>
+    <!-- =========================================FOOTER============================================ -->
+    <footer role="contentinfo">
+        <div class="module--footer-copyright">
+            <div class="row">
+                <div class="small-12 large-12 columns">
+                    <small>
+                        <span style="text-transform: none;">
+                            OCC is committed to empowering our students
+                            to succeed and advancing our community.
+                        </span>
+                        <br />
+                        <span id="directedit">©</span> 2019 Oakland Community College / 2480 Opdyke Road,
+                        Bloomfield Hills, MI 48304, 248.341.2000
+                    </small>
+                    <ul class="block__link-list block__link-list--inline">
+                        <li><a href="/about/privacy.aspx">Privacy Statement</a></li>
+                        <li>
+                            <a href="/about/mission-strategic-priorities-vision.aspx">
+                                Mission, Values &amp;
+                                Vision
+                            </a>
+                        </li>
+                        <li><a href="/about/accreditation/default.aspx">Accreditations</a></li>
+                        <li><a title="Email Webmaster" href="mailto:webmaster@oaklandcc.edu">Webmaster</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,16 @@
+﻿@model OCCAPP.Models.StudentRequest
+@{
+    ViewBag.Title = "Confirmation";
+}
+<head>
+    <link href="https://www.oaklandcc.edu/_resources/css/app-updated.css?v=2" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/occ.css")" rel="stylesheet" type="text/css" />
+</head>
+
+<div class="confirm_page_content">
+    <div class="info">
+        <h3>Request Sent</h3>
+        @Model.Firstname @Model.Lastname, Your Graduation Request has been submitted.
+    </div>
+</div>
+
